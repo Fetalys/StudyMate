@@ -1,0 +1,196 @@
+/* 1. Import & Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6fa;
+  color: #333;
+}
+
+/* 2. Header */
+header {
+  background-color: #309898;
+  color: white;
+  padding: .1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* 3. Main */
+main {
+  padding: 2rem;
+}
+
+/* 4. Intro Section */
+.intro {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 5rem;
+  overflow: hidden;
+}
+
+.intro .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.intro h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.intro p {
+  position: relative;
+  z-index: 1;
+  font-size: 1.3rem;
+}
+
+/* 5. Features/Free Cards Section */
+#card-section {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+  border-style: solid;
+  border-color: #FF9F00;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #4a7eb9;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* 6. Premium Section */
+.premium {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* 7. Pricing Section */
+#pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pricing-section .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#pricing-section .card {
+  min-width: 280px;
+  max-width: 340px;
+  padding: 2rem 2rem;
+  font-size: 1rem;
+  border-width: 2px;
+  text-align: center;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background: white;
+}
+
+#pricing-section .card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+
+#pricing-section .card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+
+#pricing-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+#pricing-section a {
+  text-decoration: none;
+}
+
+#pricing-section .prm-btn,
+#pricing-section .free-btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s, background 0.2s;
+  background: #F4631E;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#pricing-section .free-btn {
+  background: #00bcd4;      /* Free: blue */
+  color: #fff;
+}
+
+#pricing-section a.prm-btn:hover,
+#pricing-section a.free-btn:hover {
+  color: #fff !important;
+  transform: scale(1.08);
+}
+
+/* 8. Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e1e6f0;
+  margin-top: 2rem;
+}

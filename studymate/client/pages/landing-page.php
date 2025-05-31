@@ -20,7 +20,7 @@
       <a href="#">Home</a>
       <a href="#card-section">Features</a>
       <a href="#pricing-section">Pricing</a>
-      <a href="/server/auth/login.php">Login</a>
+      <a href="/studymate/server/auth/login.php">Login</a>
       <a href="#">Register</a>
     </nav>
   </header>

@@ -9,7 +9,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>StudyMate | All-in-One Student Tool</title>
-  <link rel="stylesheet" href="/studymate/client/styles/main.css">
+  <link rel="stylesheet" href="/studymate/client/styles/main.css"/>
 </head>
 
 <body>
@@ -20,8 +20,8 @@
       <a href="#">Home</a>
       <a href="#card-section">Features</a>
       <a href="#pricing-section">Pricing</a>
-      <a href="/studymate/server/auth/login.php">Login</a>
-      <a href="#">Register</a>
+      <a href="/studymate/client/pages/login-page.php">Login</a>
+      <a href="/studymate/client/pages/register-page.php">Register</a>
     </nav>
   </header>
 

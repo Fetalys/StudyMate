@@ -1,1 +1,0 @@
-// Placeholder content for create_notes_table.sql

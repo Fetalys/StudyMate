@@ -1,1 +1,0 @@
-// Placeholder content for notes.js
